@@ -5,8 +5,9 @@ angular
     .module('obrApp', [
         'ngRoute',
         'obrApp.landingPage',
-        'obrApp.donate'
-        //'myApp.version'
+        'obrApp.donate',
+        'ui.bootstrap',
+        'restangular'
     ])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/landing-page'});
